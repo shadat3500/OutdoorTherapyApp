@@ -4,8 +4,8 @@
   "description": "Production ready Node.js Express Prisma PostgreSQL template with Modular Pattern",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
+    "dev": "node init && nodemon src/index.js",
+    "start": "node init && node src/index.js",
     "seed": "node src/utils/seeder.js",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1029.0",
+    "@aws-sdk/s3-request-presigner": "^3.1029.0",
     "@prisma/client": "^5.10.0",
     "apple-signin-auth": "^2.0.0",
     "bcryptjs": "^2.4.3",
