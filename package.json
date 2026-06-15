@@ -4,8 +4,8 @@
   "description": "Production ready Node.js Express Prisma PostgreSQL template with Modular Pattern",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
+    "dev": "node init && nodemon src/index.js",
+    "start": "node init && node src/index.js",
     "seed": "node src/utils/seeder.js",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
